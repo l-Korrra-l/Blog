@@ -54,5 +54,4 @@ export default function Login() {
   );
 }
 
-//TODO fix user login
-//TODO fic favicon
+

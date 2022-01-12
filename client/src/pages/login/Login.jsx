@@ -7,7 +7,7 @@ import "./login.css";
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching } = useContext(Context);
+  const { dispatch, isFetching } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,6 +22,7 @@ export default function Login() {
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
+
 
   return (
     <div className="login">

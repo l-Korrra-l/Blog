@@ -5,7 +5,7 @@ import "./write.css";
 
 export default function Write() {
   const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [description, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
   
@@ -14,7 +14,7 @@ export default function Write() {
     const newPost = {
       username: user.username,
       title,
-      desc,
+      description,
     };
     if (file) {
       const data =new FormData();

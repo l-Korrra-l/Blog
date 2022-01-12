@@ -36,7 +36,7 @@ export default function Topbar() {
                 {user ? (
                      <Link className="link" to="/settings"> 
                     <img  className="topImg"
-                        src={user.profilePic}
+                        src={user.profilePic ? user.profilePic : "https://i.pinimg.com/564x/0e/7f/c4/0e7fc4e07efc98590d6bf008b79ec9a8.jpg"}
                         alt=""
                     />
                      </Link> 
